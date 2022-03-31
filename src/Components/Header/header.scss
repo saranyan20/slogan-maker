@@ -1,0 +1,29 @@
+// Header
+.d-header {
+  background: #146eb4;
+  padding: 1rem 10rem;
+  height: 325px;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 45px;
+  }
+  &__rightbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+
+    &--signin {
+      font-family: 'Galano Grotesque';
+      font-style: normal;
+      font-weight: 100;
+      font-size: 16px;
+      line-height: 26px;
+      color: #ffffff;
+      vertical-align: middle;
+    }
+  }
+}
