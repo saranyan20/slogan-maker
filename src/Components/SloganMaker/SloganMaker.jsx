@@ -32,7 +32,7 @@ function SloganMaker() {
 
   return (
     <div className='d-sloganmaker'>
-      <div className='card d-sloganmaker-card'>
+      <div className='d-container card d-sloganmaker-card'>
         <div className='card-body d-sloganmaker-card__body '>
           <h5 className='d-title'>Free slogan Maker</h5>
           <p>Simply enter a term that describes your business, and get up to 1,000 relevant slogans for free</p>

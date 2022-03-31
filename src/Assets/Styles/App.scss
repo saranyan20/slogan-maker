@@ -11,6 +11,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.d-container {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1250px) {
+  .d-container {
+    width: 950px;
+  }
+}
+
 // button
 .d-btn {
   font-family: 'Galano Grotesque';
