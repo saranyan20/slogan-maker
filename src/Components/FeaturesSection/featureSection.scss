@@ -1,0 +1,38 @@
+.d-feature {
+  background: #f3f7fb;
+  text-align: center;
+  padding: 5rem 0;
+
+  &__images {
+    margin-bottom: 2rem;
+    align-items: center !important;
+  }
+  &__title {
+    margin-bottom: 10px;
+    align-items: center !important;
+  }
+  &__description {
+    align-items: flex-start !important;
+  }
+  .row {
+    h5 {
+      font-family: 'Galano Grotesque';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      color: #1a181e;
+    }
+
+    p {
+      font-family: 'Galano Grotesque';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #4d4d4d;
+    }
+  }
+}
