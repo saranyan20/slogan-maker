@@ -41,10 +41,10 @@ function Pagination(props) {
 
       {/* Render page pills */}
       <div className='pills'>
-        {paginationRange.map((pageNumber) => {
+        {paginationRange.map((pageNumber, index) => {
           if (pageNumber === DOTS) {
             return (
-              <li className='pagination-item dots ' key={pageNumber}>
+              <li className='pagination-item dots ' key={index}>
                 &#8230;
               </li>
             );
@@ -55,7 +55,7 @@ function Pagination(props) {
                 selected: pageNumber === currentPage,
               })}
               onClick={() => onPageChange(pageNumber)}
-              key={pageNumber}
+              key={index}
             >
               {pageNumber}
             </li>

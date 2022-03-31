@@ -26,8 +26,8 @@ function SloganList(props) {
         <button className='d-btn d-btn-primary-outline px-3 py-1'>Download all</button>
       </div>
       <div className='row mt-4'>
-        {slogans.map((slogan) => (
-          <div className='col-sm-6 mb-3' key={slogan.id}>
+        {slogans.map((slogan, index) => (
+          <div className='col-sm-6 mb-3' key={index}>
             <div
               data-tip=''
               className='card d-slogan-list__card'
