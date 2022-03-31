@@ -30,3 +30,13 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .d-header {
+    &__rightbox {
+      button {
+        display: none;
+      }
+    }
+  }
+} ;

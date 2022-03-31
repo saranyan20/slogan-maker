@@ -15,10 +15,37 @@ body {
   width: 1120px;
   margin: 0 auto;
 }
-
-@media (max-width: 1250px) {
+@media only screen and (max-width: 425px) {
   .d-container {
-    width: 950px;
+    width: calc(100% - 20px);
+  }
+  .d-btn {
+    width: 100%;
+  }
+}
+@media only screen and (mix-width: 425px) {
+  .d-container {
+    width: 345px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .d-container {
+    width: 520px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .d-container {
+    width: 688px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .d-container {
+    width: 912px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .d-container {
+    width: 1120px;
   }
 }
 

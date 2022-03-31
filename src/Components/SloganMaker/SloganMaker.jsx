@@ -23,7 +23,7 @@ function SloganMaker() {
         firstPageIndex = 0;
         lastPageIndex = PageSize;
       } else {
-        filteredSlogans = [...slogans];
+        filteredSlogans = [];
       }
     }
 
@@ -42,7 +42,6 @@ function SloganMaker() {
             <input
               type='search'
               className='form-control mt-2'
-              placeholder='Enter your word'
               onChange={(e) => {
                 setSearchKeyword(e.target.value);
                 setCurrentPage(1);
