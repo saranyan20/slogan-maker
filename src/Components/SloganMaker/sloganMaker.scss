@@ -1,0 +1,88 @@
+.d-sloganmaker {
+  padding: 1rem 10rem;
+  background: #fafafa;
+
+  &-card {
+    position: relative;
+    top: -12rem;
+
+    &__body {
+      padding: 3rem 12rem !important;
+    }
+  }
+
+  p {
+    font-family: 'Galano Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #4d4d4d;
+  }
+
+  label {
+    font-family: 'Galano Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #4d4d4d;
+  }
+
+  input {
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 40%;
+  }
+
+  input::placeholder {
+    font-family: 'Galano Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #1a181e;
+  }
+
+  hr {
+    background: #d9d9d9;
+    height: 3px !important;
+    width: 100%;
+    margin: 0;
+  }
+
+  .d-slogan-list {
+    &__header {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__title {
+      font-family: 'Galano Grotesque';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      color: #1a181e;
+    }
+
+    &__card {
+      border: none;
+      background: #f2f2f2;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    &__item {
+      font-family: 'Galano Grotesque';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #1a181e;
+    }
+  }
+}
