@@ -1,0 +1,36 @@
+.d-product {
+  background: #fff;
+  padding: 5rem 0 2rem;
+
+  img {
+    width: 100%;
+  }
+
+  &__heading {
+    font-family: 'Galano Grotesque';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -0.04em;
+    color: #1a181e;
+  }
+
+  &__title {
+    font-family: 'Galano Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1a181e;
+  }
+
+  &__description {
+    font-family: 'Galano Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4d4d4d;
+  }
+}
