@@ -7,7 +7,9 @@ function Header() {
   return (
     <div className='d-header'>
       <div className=' d-container d-header__container'>
-        <img src={Logo} alt='dukaan' className='d-logo'></img>
+        <a href='#'>
+          <img src={Logo} alt='dukaan' className='d-logo' />
+        </a>
 
         <div className='d-header__rightbox'>
           <h5 className='d-header__rightbox--signin mb-0 d-inline-block mr-2'>Sign In</h5>

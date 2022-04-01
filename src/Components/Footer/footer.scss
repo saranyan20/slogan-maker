@@ -32,6 +32,15 @@
     justify-content: space-between;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
+    a {
+      cursor: pointer;
+      color: #fff;
+      text-decoration: none !important;
+    }
+    a:hover {
+      text-decoration: underline !important;
+      color: #fff;
+    }
   }
 
   li {
