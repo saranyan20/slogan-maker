@@ -25,7 +25,7 @@ function SloganList(props) {
       <div className='d-slogan-list__header'>
         <div>{searchResultText}</div>
         <CSVLink
-          className='d-btn d-btn-primary-outline px-3 py-1 text-decoration-none'
+          className='d-btn d-btn-primary-outline px-3 py-1 text-decoration-none d-export-btn'
           data={getSlogansForExport()}
           filename={'generated-slogans.csv'}
         >

@@ -103,6 +103,10 @@
     .d-slogan-list__header {
       display: block;
     }
+    .d-export-btn {
+      display: block;
+      text-align: center;
+    }
   }
 }
 
@@ -115,6 +119,10 @@
     .d-slogan-list__header {
       display: block;
     }
+    .d-export-btn {
+      display: block;
+      text-align: center;
+    }
   }
 }
 @media only screen and (min-width: 600px) {
@@ -125,6 +133,10 @@
     }
     .d-slogan-list__header {
       display: flex;
+    }
+    .d-export-btn {
+      display: inline-block;
+      text-align: center;
     }
   }
 }
@@ -137,6 +149,10 @@
     .d-slogan-list__header {
       display: flex;
     }
+    .d-export-btn {
+      display: inline-block;
+      text-align: center;
+    }
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -144,6 +160,10 @@
     height: 1125px;
     .d-slogan-list__header {
       display: flex;
+    }
+    .d-export-btn {
+      display: inline-block;
+      text-align: center;
     }
   }
 }

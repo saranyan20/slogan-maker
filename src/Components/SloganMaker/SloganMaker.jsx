@@ -27,9 +27,6 @@ function SloganMaker() {
         filteredSlogans = [];
       }
     }
-    console.log(filteredSlogans);
-    console.log(filteredSlogans.slice(firstPageIndex, lastPageIndex));
-    console.log(firstPageIndex, lastPageIndex);
     return filteredSlogans.slice(firstPageIndex, lastPageIndex);
   }
 
