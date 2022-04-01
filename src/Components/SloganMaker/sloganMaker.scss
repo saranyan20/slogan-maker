@@ -100,6 +100,9 @@
     input {
       width: 100%;
     }
+    .d-slogan-list__header {
+      display: block;
+    }
   }
 }
 
@@ -109,6 +112,9 @@
     &-card__body {
       padding: 2rem !important;
     }
+    .d-slogan-list__header {
+      display: block;
+    }
   }
 }
 @media only screen and (min-width: 600px) {
@@ -116,6 +122,9 @@
     height: 1180px;
     &-card__body {
       padding: 3rem !important;
+    }
+    .d-slogan-list__header {
+      display: flex;
     }
   }
 }
@@ -125,10 +134,16 @@
     &-card__body {
       padding: 3rem 12rem !important;
     }
+    .d-slogan-list__header {
+      display: flex;
+    }
   }
 }
 @media only screen and (min-width: 1200px) {
   .d-sloganmaker {
     height: 1125px;
+    .d-slogan-list__header {
+      display: flex;
+    }
   }
 }

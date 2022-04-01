@@ -12,6 +12,7 @@ function SloganMaker() {
   const [currentPage, setCurrentPage] = useState(1);
 
   let filteredSlogans = [...slogans];
+  let enteredKeyword = '';
 
   function getCurrentPageData() {
     let firstPageIndex = (currentPage - 1) * PageSize;
@@ -26,8 +27,30 @@ function SloganMaker() {
         filteredSlogans = [];
       }
     }
-
+    console.log(filteredSlogans);
+    console.log(filteredSlogans.slice(firstPageIndex, lastPageIndex));
+    console.log(firstPageIndex, lastPageIndex);
     return filteredSlogans.slice(firstPageIndex, lastPageIndex);
+  }
+
+  function handleGenerateSlogan() {
+    setSearchKeyword(enteredKeyword);
+    setCurrentPage(1);
+  }
+
+  function handleInput(e) {
+    enteredKeyword = e.target.value;
+
+    // for resetting the input field
+    if (enteredKeyword === '') {
+      handleGenerateSlogan();
+    }
+  }
+
+  function getSlogansForExport() {
+    return filteredSlogans.map((el) => ({
+      slogans: el.text,
+    }));
   }
 
   return (
@@ -39,20 +62,22 @@ function SloganMaker() {
 
           <div className='mt-5'>
             <label>Word of your slogan</label>
-            <input
-              type='search'
-              className='form-control mt-2'
-              onChange={(e) => {
-                setSearchKeyword(e.target.value);
-                setCurrentPage(1);
-              }}
-            />
+            <form>
+              <input type='search' className='form-control mt-2' onInput={handleInput}></input>
+            </form>
           </div>
 
-          <button className='d-btn d-btn-primary my-5'>Generate slogans</button>
+          <button className='d-btn d-btn-primary my-5' onClick={handleGenerateSlogan}>
+            Generate slogans
+          </button>
 
           <hr />
-          <SloganList slogans={getCurrentPageData()} searchKeyword={searchKeyword} totalCount={filteredSlogans.length} />
+          <SloganList
+            slogans={getCurrentPageData()}
+            searchKeyword={searchKeyword}
+            totalCount={filteredSlogans.length}
+            getSlogansForExport={getSlogansForExport}
+          />
           <hr />
 
           <Pagination
