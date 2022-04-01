@@ -1,7 +1,7 @@
 .d-sloganmaker {
   padding: 1rem;
   background: #fafafa;
-  height: 1125px;
+  height: fit-content;
 
   &-card {
     position: relative;
@@ -93,7 +93,6 @@
 }
 @media only screen and (max-width: 425px) {
   .d-sloganmaker {
-    height: 1850px;
     &-card__body {
       padding: 2rem !important;
     }
@@ -112,7 +111,6 @@
 
 @media only screen and (min-width: 425px) {
   .d-sloganmaker {
-    height: 1650px;
     &-card__body {
       padding: 2rem !important;
     }
@@ -127,7 +125,6 @@
 }
 @media only screen and (min-width: 600px) {
   .d-sloganmaker {
-    height: 1180px;
     &-card__body {
       padding: 3rem !important;
     }
@@ -142,7 +139,6 @@
 }
 @media only screen and (min-width: 992px) {
   .d-sloganmaker {
-    height: 1250px;
     &-card__body {
       padding: 3rem 12rem !important;
     }
@@ -157,7 +153,6 @@
 }
 @media only screen and (min-width: 1200px) {
   .d-sloganmaker {
-    height: 1125px;
     .d-slogan-list__header {
       display: flex;
     }

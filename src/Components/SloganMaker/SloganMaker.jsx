@@ -78,7 +78,7 @@ function SloganMaker() {
           <hr />
 
           <Pagination
-            className='pagination-bar my-5'
+            className='pagination-bar mt-5'
             currentPage={currentPage}
             totalCount={filteredSlogans.length}
             pageSize={PageSize}
