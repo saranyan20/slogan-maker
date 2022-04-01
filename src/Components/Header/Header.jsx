@@ -12,7 +12,9 @@ function Header() {
         </a>
 
         <div className='d-header__rightbox'>
-          <h5 className='d-header__rightbox--signin mb-0 d-inline-block mr-2'>Sign In</h5>
+          <a href='#'>
+            <h5 className='d-header__rightbox--signin mb-0 d-inline-block mr-2'>Sign In</h5>
+          </a>
 
           <button className={classnames('d-btn d-btn-secondary')}>Dukaan for PC</button>
         </div>
