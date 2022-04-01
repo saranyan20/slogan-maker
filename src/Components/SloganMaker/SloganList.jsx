@@ -1,9 +1,10 @@
 import './sloganMaker.scss';
 import ReactTooltip from 'react-tooltip';
 import { useState, useEffect } from 'react';
+import { CSVLink } from 'react-csv';
 
 function SloganList(props) {
-  const { slogans, searchKeyword, totalCount } = props;
+  const { slogans, searchKeyword, totalCount, getSlogansForExport } = props;
   const [isCopied, setIsCopied] = useState(false);
 
   useEffect(() => {
@@ -23,7 +24,13 @@ function SloganList(props) {
     <div className='d-slogan-list my-5'>
       <div className='d-slogan-list__header'>
         <div>{searchResultText}</div>
-        <button className='d-btn d-btn-primary-outline px-3 py-1'>Download all</button>
+        <CSVLink
+          className='d-btn d-btn-primary-outline px-3 py-1 text-decoration-none'
+          data={getSlogansForExport()}
+          filename={'generated-slogans.csv'}
+        >
+          Download all
+        </CSVLink>
       </div>
       <div className='row mt-4'>
         {slogans.map((slogan, index) => (
