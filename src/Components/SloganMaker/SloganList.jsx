@@ -41,9 +41,9 @@ function SloganList(props) {
               onClick={() => {
                 setIsCopied(true);
                 navigator.clipboard.writeText(slogan.text);
-                setTimeout(() => {
-                  setIsCopied(false);
-                }, 500);
+              }}
+              onMouseLeave={() => {
+                if (isCopied) setIsCopied(false);
               }}
             >
               <div className='card-body'>

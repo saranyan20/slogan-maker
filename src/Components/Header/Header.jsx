@@ -6,7 +6,7 @@ import Logo from '../../Assets/Images/logo.svg';
 function Header() {
   return (
     <div className='d-header'>
-      <div className=' d-container d-header__container'>
+      <div className='d-container d-header__container'>
         <a href='#'>
           <img src={Logo} alt='dukaan' className='d-logo' />
         </a>
